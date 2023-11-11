@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --pink-color:#F15692;
+    --cyan-color:#00FFFF;
+    --green-color:#7BFF68;
+    ---blue-color:#20478A;
+    --light-grey-color:#D3D5D8;
+    --dark-grey-color:#3E3E3E;
+    --dark-grey-color-2:#4A4A4A;
+    --grey-blue-color:#52586F;
+    --grey-blue-color-2:#5B6676;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+/*$$$$$$$$$$$$$$$$ First Landing Page $$$$$$$$$$$$$$$$$$$$$$*/
+.landing {
+    background: url(svg/bg.svg) no-repeat center center fixed;
+    background-size: cover;
+    width:100%;
+    height: 96vh;
+}
+
+/********************BEGINNING NAVBAR**********************/
+nav img#logo {
+    position: absolute;
+    left: 3.19%;
+    right: 86.67%;
+    top: 2.28%;
+    bottom: 93.32%;
+    }
+
+nav ul{
+        position: absolute;
+        left: 39.03%;
+        top: 4vw;
+        bottom: 94.46%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        z-index: 1000;
+    }
+
+nav a {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 31px;
+        text-align: center;
+
+        margin-right: 4vw;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+        
+ul li:nth-child(1) a:hover {
+        color:#00FFFF;
+}
+ul li:nth-child(2) a:hover {
+        color :  #7BFF68;
+}
+ul li:nth-child(3) a:hover {
+            color: #00FFFF;
+}
+nav .visit-button {
+            position: absolute;
+            left: 83.82%;
+            right: 4.38%;
+            top: 2.66%;
+            bottom: 93.93%;
+            height: 45px;
+            box-sizing: border-box;
+            background : none;
+            border-radius: 4px;
+            border: 1px solid #FFFFFF;
+            font-family: 'Source Sans 3';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            z-index: 1000;
+            cursor: pointer;
+            
+}
+        
+nav .visit-button:hover {
+            background: #ffffff;
+            color: var( ---blue-color);
+}
+nav .menu {
+    background:none;
+    border:none;
+    position: absolute;
+    left : 88%;
+    top:3%;
+    display: none;
+
+}
+nav #hamburger {
+    height:24px;
+    width:24px;
+}
+
+
+
+/********************END NAVBAR**********************/
+
+/********************BEGINNING LEFT TEXT**********************/
+
+.landing .container .left {
+    position:absolute;
+    width:50%;
+    height:96vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+.landing .container .left h1 {
+top:32.6%;
+left:12.22%;
+width:79%;
+position: absolute;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 48px ;
+line-height: 118%;
+letter-spacing: -0.01em;
+text-transform: capitalize;
+color: #FFFFFF;
+margin-bottom: 10px;
+}
+
+.landing .container .left .blue-text {
+    color : var(--cyan-color);
+}
+.landing .container .left .green-text {
+    color : var(--green-color);
+}
+
+.landing .container .left p {
+    position: absolute;
+    top: 60%;
+    width:79%;
+    left:12.22%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 174.5%;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+
+.landing .container img{
+    position: absolute;
+    top:688px;
+    left: 50px;
+    width:165.16px;
+    height:104.12px;
+
+}
+
+/********************END LEFT TEXT**********************/
+
+/********************BEGINNING CONTACT FORM**********************/
+
+.landing .container .right {
+
+    width:50%;
+    left:50%;
+    position: absolute;
+    height:96vh;
+}
+.landing .container .right .box {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top:158px;
+    left: 164px;
+    width:372px;
+    height: 517px;
+    border-radius: 4px;
+}
+
+
+.landing .container .right h2 {
+    position: relative;
+    color:var(--dark-grey-color);
+    font-family: 'Open Sans';
+    font-weight:700;
+    font-size: 24px;
+    line-height: 30px;
+    top:6.77%;
+    left:9.67%;
+}
+.landing .container .right p {
+    position: absolute;
+    top: 14.8%;
+    left:9.67%;
+    width:79%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--grey-blue-color);
+}
+.landing .container .right .form {
+    height: 49%;
+    width:80%;
+    top : 27.5%;
+    left: 9.67%;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+    
+
+}
+input {
+    width: 100%;
+    padding:15px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-grey-color);
+}
+
+input:focus{
+    border-bottom: 1px solid var(---blue-color);
+}
+
+
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-grey-color);
+    resize: none;
+    height: 60px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+input::placeholder {
+    color: var(--grey-blue-color-2);
+    font-size:14px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+textarea::placeholder {
+    color: var(--grey-blue-color-2);
+    font-size:14px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+.submit-button {
+    display: block;
+    margin: 5px auto;
+    width:100%;
+    padding: 12px 20px; 
+    background-color: #5CCE4C;
+    color: #FFFFFF;
+    font-size:16px;
+    font-family: 'Source Sans 3';
+    font-weight: 600;
+    line-height: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #4FBA3F;
+}
+
+/********************END CONTACT FORM**********************/
+
+/*$$$$$$$$$$$$$$$$ END First Landing Page $$$$$$$$$$$$$$$$$$$$$$*/
+
+/*$$$$$$$$$$$$$$$$ BEGINNING Features $$$$$$$$$$$$$$$$$$$$$$*/
+
+.features {
+    width:100%;
+    height: 65vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features h3 {
+    position: relative;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: var(--pink-color);
+    width: 69px;
+    height: 24px;
+
+
+}
+
+.features h1 {
+position: relative;
+font-size: 32px;
+font-family: "Open Sans";
+font-weight: 700;
+color: rgba(74, 74, 74, 1);
+width: 358px;
+height: 45px;
+top:10px;
+}
+
+.features .benefits {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 53%;
+    margin-top: 6%;
+    margin-left: 4%;
+    align-items: center;
+}
+
+.features .benefits .benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 4%;
+    width: 30%;
+    height: 100%;
+    border-radius: 11px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition: all 0.3s ease-in-out;
+}
+
+.features .benefits .benefit:hover {
+    transform: scale(1.1);
+}
+
+.features .benefits .benefit img {
+    position: relative;
+    margin-top: 15%;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 10%;
+}
+
+.features .benefits .benefit h2 {
+    position: relative;
+    font-size: 20px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: var(--dark-grey-color-2);
+    letter-spacing: -0.01em;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 5%;
+    text-align: center;
+    line-height: 24px;
+}
+
+.features .benefits .benefit p {
+    position: relative;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    color: var(--dark-grey-color-2);
+    width: 78.6%;
+    height: 100%;
+    text-align: center;
+    line-height: 23px;
+}
+
+
+/*$$$$$$$$$$$$$$$$ END Features $$$$$$$$$$$$$$$$$$$$$$*/
+
+/*$$$$$$$$$$$$$$$$ BEGINNING Responsive $$$$$$$$$$$$$$$$$$$$$$*/
+
+/*********************BEGINNING NAVBAR**********************/
+@media screen and (max-width:830px) {
+    nav img#logo {
+        width: 93px;
+        height: 35px;
+        top: 11px;
+        left: 8px;
+    }
+    nav .menu {
+        display: block;
+        cursor:pointer;
+    }
+    nav .liens {
+        background-color:var( ---blue-color);
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        top:10%;
+        z-index: 1000;
+        border-bottom:#fff solid 1px;
+        border-top: #fff solid 1px;
+        display:none;
+      }
+    
+    nav .liens ul {
+        position:relative;
+        left:2%;
+        display: flex;
+        flex-direction: column;
+        list-style:none;
+      }
+    nav .liens ul li {
+        margin-bottom: 20px;
+    
+      }
+    nav .liens ul li a {
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s ease;
+      }
+    nav .liens .visit-button {
+        position: absolute;
+        top: 80%;
+        align-self: center;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 45px;
+        box-sizing: border-box;
+        background : none;
+        border-radius: 4px;
+        border: 1px solid #FFFFFF;
+        font-family: 'Source Sans 3';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        z-index: 1000;
+        cursor: pointer;
+      }
+      nav .visit-button:hover {
+        background: #ffffff;
+        color: var( ---blue-color);
+    }
+    }
+/*********************END NAVBAR**********************/
+
+
+/*********************BEGINNING LEFT TEXT**********************/
+
+@media screen and (max-width: 1230px) {
+    .landing .container .left h1 {
+        font-size: 40px;
+    }
+    .landing .container .left p {
+        font-size: 16px;
+        top:60%;
+    }
+    .landing .container .right {
+        left:45%;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .landing .container .left h1 {
+        font-size: 32px;
+    }
+    .landing .container .left p {
+        font-size: 16px;
+        top:50%;
+    }
+    .landing .container .right {
+        left:40%;
+    }
+}
+@media screen and (max-width:930px){
+
+    .landing .container .right {
+        left:35%;
+    }
+    
+}
+@media screen and (max-width: 830px) {
+    .landing {
+        height:140vh;
+    }
+    .landing .container .left {
+        width: 100%;
+        height:50%;
+        top: 10%;
+        left: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .landing .container .left h1 {
+        font-size: 32px;
+        width:87%;
+        left:0%;
+        position: relative;
+        text-align: center;
+        top:5%;
+
+    }
+    .landing .container .left p {
+        font-size: 16px;
+        position:relative;
+        left:0%;
+        top:10%;
+        width:78%;
+   
+        text-transform: capitalize;
+        
+        
+    }
+    .landing .container .left .blue-text {
+        color:white;
+    }
+    .landing .container .left .green-text {
+        color:white;
+    }
+
+    /*$$$$$$$$$$$$$$$$ END LEFT TEXT $$$$$$$$$$$$$$$$$$$$$$*/
+
+    /*$$$$$$$$$$$$$$$$ BEGINNING CONTACT FORM $$$$$$$$$$$$$$$$$$$$$$*/
+    .landing .container .right{
+        position:absolute;
+        width: 100%;
+        height: 75%;
+        left:0%;
+        top:60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .landing .container .right .box {
+        position: relative;
+        top:0%;
+        text-align: center;
+        width:335px;
+        height: 556px;
+        left:0%;
+    }
+    .landing .container .right .box h2 {
+        position: relative;
+        left:0%;
+        width:100%;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10%;
+    }
+    .landing .container img {
+        display:none;
+    }
+
+}
+/*********************END CONTACT FORM**********************/
+/*********************BEGINNING FEATURES**********************/
+
+@media screen and (max-width: 830px) {
+    .features {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .features h3 {
+        margin-top: 15%;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+    .features h1 {
+        font-size: 34px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+    .features .benefits {
+        position:relative;
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+        margin-top: 0%;
+        margin-left: 0%;
+
+    }
+    .features .benefits .benefit {
+        width: 319px;
+        height: 230px;
+        margin-right: 0%;
+        margin-bottom: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+    .features .benefits .benefit img {
+        margin-bottom: 5%;
+    }
+    .features .benefits .benefit h2 {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .features .benefits .benefit p {
+        font-size: 16px;
+        width: 83%;
+        text-align: center;
+        margin-bottom: 7%;
+    }
+    
+}
+/*********************END FEATURES**********************/
+
+/*$$$$$$$$$$$$$$$$ END Responsive $$$$$$$$$$$$$$$$$$$$$$*/
+
